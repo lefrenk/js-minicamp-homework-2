@@ -10,14 +10,14 @@ function greeting(language) {
 	if (language === 'German') {
 		return 'Guten Tag!';
 	} else
-  if (language === 'English') {
-	return 'Hello!';
-} else
-  if (language === 'Spanish') {
-	return 'Hola!';
-} else {
-	return 'Hello!';
-}
+	if (language === 'English') {
+		return 'Hello!';
+	} else
+	if (language === 'Spanish') {
+		return 'Hola!';
+	} else {
+		return 'Hello!';
+	}
   //return a greeting for three different languages:
   //language: 'German' -> 'Guten Tag!'
   //language: 'English' -> 'Hello!'
