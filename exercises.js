@@ -1,11 +1,7 @@
 //Do not change any of the function names
 
 function getBiggest(x, y) {
-	if (x > y) {
-		return x;
-	} else {
-		return y;
-	}
+	return x > y ? x : y;
   //x and y are integers.  Return the larger integer
   //if they are the same return either one
 }
@@ -30,30 +26,18 @@ function greeting(language) {
 }
 
 function isTenOrFive(num) {
-	if (num === 10 || num === 5) {
-		return true;
-	} else {
-		return false;
-	}
+	return (num === 10 || num === 5) ? true : false;
   //return true if num is 10 or 5
   //otherwise return false
 }
 
 function isInRange(num) {
-	if (num < 50 && num > 20) {
-		return true;
-	} else {
-		return false;
-	}
+	return (num < 50 && num > 20) ? true : false;
   //return true if num is less than 50 and greater than 20
 }
 
 function isInteger(num) {
-	if (num === parseInt(num, 10)) {
-		return true;
-	} else {
-		return false;
-	}
+	return (num === parseInt(num, 10)) ? true : false;
   //return true if num is an integer
   //0.8 -> false
   //1 -> true
@@ -146,11 +130,7 @@ function wordsToSentence(words) {
 
 
 function contains(arr, item) {
-	if (arr.indexOf(item) > -1) {
-		return true;
-	} else {
-		return false;
-	}
+	return (arr.indexOf(item) > -1) ? true : false;
 }
   //check to see if item is inside of arr
   //return true if it is, otherwise return false
@@ -170,9 +150,17 @@ function averageTestScore(testScores) {
 		return a + b;
 	}, 0);
 	return sum / testScores.length;
+}
+// function averageTestScore2(testScores) {
+// 	var sum = 0;
+// 	for(let i = 0; i < testScores.length; i++) {
+// 		sum += testScores[i];
+//  }
+// 	return sum / testScores.length;
+// }
   //testScores is an array.  Iterate over testScores and compute the average.
   //return the average
-}
+
 
 function largestNumber(numbers) {
 	return Math.max.apply(Math, numbers);
